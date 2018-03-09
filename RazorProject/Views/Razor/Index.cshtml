@@ -1,0 +1,21 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <div> 
+        @if (Model != null)
+        {
+            foreach (var item in Model)
+            {
+                <h1>@Html.Encode(item.Email)</h1>
+                <h3>@Html.Encode(item.Password)</h3>
+            }
+        }
+        
+    </div>
+</body>
+</html>

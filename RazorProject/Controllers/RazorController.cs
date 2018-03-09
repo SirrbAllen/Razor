@@ -14,14 +14,24 @@ namespace RazorProject.Controllers
     {
         private RazorDB db = new RazorDB();
 
-        public ActionResult Index()
+        public ActionResult Add()
         {
-            db.Technologies.Add(new Technology { Title = null, Description = null });
             return View();
             
         }
 
+        [HttpPost]
+        public ActionResult Add(string email, string password)
+        {
+            db.Accounts.Add(new Account { Email = email, Password = password });
+            db.SaveChanges();
+            return RedirectToAction("Index");
+        }
         
+        public ActionResult Index()
+        {
+            return View(db.Accounts.ToList());
+        }
 
 
     }
