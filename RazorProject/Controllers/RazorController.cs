@@ -14,7 +14,7 @@ namespace RazorProject.Controllers
     {
         private RazorDB db = new RazorDB();
 
-        public ActionResult Add()
+        public ActionResult Register()
         {
             return View();
             
@@ -30,9 +30,13 @@ namespace RazorProject.Controllers
         
         public ActionResult Index()
         {
-            return View(db.Accounts.ToList());
+            return View(db.Technologies.ToList());
         }
 
+        public ActionResult Login()
+        {
+            return View();
+        }
 
     }
 }

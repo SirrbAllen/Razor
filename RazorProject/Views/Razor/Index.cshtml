@@ -9,13 +9,25 @@
     <div> 
         @if (Model != null)
         {
-            foreach (var item in Model)
-            {
-                <h1>@Html.Encode(item.Email)</h1>
-                <h3>@Html.Encode(item.Password)</h3>
-            }
-        }
-        
-    </div>
+            <table>
+                <tr>
+                    <th>Name</th>
+                    <th>Description</th>
+                    <th>Priority</th>
+                </tr>
+            <</table>
+                foreach (var item in Model)
+                {
+                <table>
+                    <tr>
+                        <td>@Html.Encode(item.Title)</td>
+                        <td>@Html.Encode(item.Description)</td>
+                        <td>@Html.Encode(item.Priority)</td>
+                    </tr>
+                </table>
+                }
+                }
+
+</div>
 </body>
 </html>

@@ -16,7 +16,7 @@ namespace RazorProject
             routes.MapRoute(
                 name: "Default",
                 url: "{controller}/{action}/{id}",
-                defaults: new { controller = "Razor", action = "Add", id = UrlParameter.Optional }
+                defaults: new { controller = "Razor", action = "Register", id = UrlParameter.Optional }
             );
         }
     }
