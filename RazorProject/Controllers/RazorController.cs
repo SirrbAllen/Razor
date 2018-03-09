@@ -33,6 +33,18 @@ namespace RazorProject.Controllers
             return View(db.Technologies.ToList());
         }
 
+        public ActionResult Create()
+        {
+            return View();
+        }
+        [HttpPost]
+        public ActionResult Create(string title, string description, string priority, string category, string status, string url)
+        {
+            db.Technologies.Add(new Technology { Title = title, Description = description, Priority = priority, Category = category, Status = status, Url = url});
+            db.SaveChanges();
+            return RedirectToAction("Index");
+        }
+
         public ActionResult Login()
         {
             return View();
