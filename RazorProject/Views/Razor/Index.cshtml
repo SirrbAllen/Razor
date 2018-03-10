@@ -9,16 +9,19 @@
         @if (Model != null)
         {
             <a href="Create">Create</a>
-            <table>
+            <table width="80%">
                 <tr>
                     <th>Name</th>
                     <th>Description</th>
                     <th>Priority</th>
+                    <th>Status</th>
+                    <th>Category</th>
+                    <th>Url</th>
                 </tr>
             </table>
                 foreach (var item in Model)
                 {
-                <table>
+                <table width="75%">
                     <tr>
                         <td>@Html.Encode(item.Title)</td>
                         <td>@Html.Encode(item.Description)</td>
