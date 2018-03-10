@@ -7,6 +7,7 @@ using System.Net;
 using System.Web;
 using System.Web.Mvc;
 using RazorProject.Models;
+using DevOne.Security.Cryptography.BCrypt;
 
 namespace RazorProject.Controllers
 {
@@ -23,10 +24,9 @@ namespace RazorProject.Controllers
         public ActionResult Register()
         {
             return View();
-            
         }
         [HttpPost]
-        public ActionResult Create(string email, string password)
+        public ActionResult Register(string email, string password)
         {
             db.Accounts.Add(new Account { Email = email, Password = password });
             db.SaveChanges();
