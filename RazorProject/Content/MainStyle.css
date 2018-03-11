@@ -24,20 +24,75 @@ ul {
         li:hover {
             background-color: #f15a5d;
         }
-        a{
-            color: #f1f1f1;
-            display: block;
-        }
-th{
-    color: #f1f1f1;
-}
-    td{
+    a{
         color: #f1f1f1;
+        display: block;
     }
-input {
-    display: block;
-    background-color: #1e162d;
+    #Button {
+        color: #f1f1f1;
+        border: solid 2px;
+        border-color: #f15a5d;
+        border-radius: 10px;
+        padding: 5px;
+        width: 30%;
+        text-align: center;
+        margin: 0 auto;
+    }
+        #Button:hover {
+            background-color: #f15a5d;
+        }
+.container {
+    text-align: center;
+    border: solid 2px;
     border-color: #f15a5d;
     border-radius: 10px;
+    width: 50%;
+    margin: 0 auto;
+    padding: 10px;
+}
+    input {
+        display: block;
+        border: solid 2px;
+        background-color: #1e162d;
+        border-color: #f15a5d;
+        border-radius: 10px;
+        color: #f1f1f1;
+        width: 70%;
+        margin: 0 auto;
+        padding: 5px;
+        margin-bottom: 10px;
+    }
+    textarea {
+        color: #f1f1f1;
+        background-color: #1e162d;
+        border: solid 2px;
+        border-color: #f15a5d;
+        border-radius: 10px;
+        margin-bottom: 10px;
+        width: 70%;
+    }
+    select {
+        color: #f1f1f1;
+        background-color: #1e162d;
+        border: solid 2px;
+        border-color: #f15a5d;
+        border-radius: 10px;
+        margin-bottom: 10px;
+        width: 70%;
+    }
+    .Input_Button{
+        width: 30%;
+    }
+        .Input_Button:hover {
+            background-color: #f15a5d;
+        }
+h1{
     color: #f1f1f1;
 }
+    h3{
+        color: #f1f1f1;
+        width: 250px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }

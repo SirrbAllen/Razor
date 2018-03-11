@@ -5,15 +5,30 @@
     <meta name="viewport" content="width=device-width" />
 </head>
 <body>
-    <div> 
+    <div class="container"> 
         <form method="post">
             <input type="text" name="Title" placeholder="Name" required/>
-            <input type="text" name="Description" placeholder="Description" />
-            <input type="text" name="Priority" placeholder="Priority" required/>
-            <input type="text" name="Status" placeholder="Status" required/>
-            <input type="text" name="Category" placeholder="Category" required/>
-            <input type="text" name="Url" placeholder="External URL" />
-            <input type="submit" value="Create" />
+            <textarea name="Description" placeholder="Description" rows="10" cols="30" /></textarea>
+            <input type="text" name="Url" placeholder="External URL * Optional" />
+            <select name="Priority" required>
+                <option value="High">High</option>
+                <option value="Medium">Medium</option>
+                <option value="Low">Low</option>
+            </select>
+            <select name="Status" required>
+                <option value="Backlog">Backlog</option>
+                <option value="Trialing">Trialing</option>
+                <option value="Reviewing">Reviewing</option>
+                <option value="Adopted">Adopted</option>
+                <option value="Rejected">Rejected</option>
+            </select>
+            <select name="Category" required>
+                <option value="Tools">Tools</option>
+                <option value="Languages & Frameworks">Languages & Frameworks</option>
+                <option value="Platforms">Platforms</option>
+                <option value="Techniques">Techniques</option>
+            </select>
+            <input type="submit" value="Create" class="Input_Button"/>
         </form>
     </div>
 </body>
