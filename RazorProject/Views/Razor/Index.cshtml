@@ -5,34 +5,22 @@
     <meta name="viewport" content="width=device-width" />
 </head>
 <body>
-    <div> 
+    <div>
         @if (Model != null)
         {
-            <a href="Create">Create</a>
-            <table width="80%">
-                <tr>
-                    <th>Name</th>
-                    <th>Description</th>
-                    <th>Priority</th>
-                    <th>Status</th>
-                    <th>Category</th>
-                    <th>Url</th>
-                </tr>
-            </table>
+            <h1 class="title">Technologies</h1>
+            <a href="Create" id="Button">Add Technology</a>
                 foreach (var item in Model)
                 {
-                <table width="75%">
-                    <tr>
-                        <td>@Html.Encode(item.Title)</td>
-                        <td>@Html.Encode(item.Description)</td>
-                        <td>@Html.Encode(item.Priority)</td>
-                        <td>@Html.Encode(item.Status)</td>
-                        <td>@Html.Encode(item.Category)</td>
-                        <td>@Html.Encode(item.Url)</td>
-                    </tr>
-                </table>
-                }
-                }
+                <div>
+                    <h1>@Html.Encode(item.Title)</h1>
+                    <h3>@Html.Encode(item.Description)</h3>
+                    <h3>@Html.Encode(item.Priority)</h3>
+                    <h3>@Html.Encode(item.Category)</h3>
+                    <h3>@Html.Encode(item.Status)</h3>
+                </div>
+            }
+        }
 
 </div>
 </body>
