@@ -7,15 +7,20 @@
 <body>
     <h1 class="title">Create Technology</h1>
     <div class="container"> 
-        <form method="post" onsubmit=" return ValidateForm()">
-            <input type="text" name="Title" placeholder="Name" required/>
-            <textarea name="Description" placeholder="Description" rows="10" cols="30" /></textarea>
-            <input type="text" name="Url" placeholder="External URL * Optional" />
+        <form name="CreateForm" method="post" onsubmit=" return ValidateForm()">
+            <label>Name</label>
+            <input type="text" name="Title" required/>
+            <label>Description</label>
+            <textarea name="Description" rows="5" cols="30" /></textarea>
+            <label>External URL *Optional</label>
+            <input type="text" name="Url" />
+            <label>Priority</label>
             <select name="Priority" required>
                 <option value="High">High</option>
                 <option value="Medium">Medium</option>
                 <option value="Low">Low</option>
             </select>
+            <label>Status</label>
             <select name="Status" required>
                 <option value="Backlog">Backlog</option>
                 <option value="Trialing">Trialing</option>
@@ -23,9 +28,10 @@
                 <option value="Adopted">Adopted</option>
                 <option value="Rejected">Rejected</option>
             </select>
+            <label>Category</label>
             <select name="Category" required>
                 <option value="Tools">Tools</option>
-                <option value="Languages & Frameworks">Languages & Frameworks</option>
+                <option value="Languages and Frameworks">Languages and Frameworks</option>
                 <option value="Platforms">Platforms</option>
                 <option value="Techniques">Techniques</option>
             </select>
