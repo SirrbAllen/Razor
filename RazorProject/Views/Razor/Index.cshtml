@@ -8,16 +8,17 @@
     <div>
         @if (Model != null)
         {
+            <a href="/Razor/Create" id="Button">ADD TECHNOLOGY</a>
             <h1 class="title">Technologies</h1>
-            <a href="Create" id="Button">Add Technology</a>
                 foreach (var item in Model)
                 {
-                <div>
-                    <h1>@Html.Encode(item.Title)</h1>
-                    <h3>@Html.Encode(item.Description)</h3>
-                    <h3>@Html.Encode(item.Priority)</h3>
-                    <h3>@Html.Encode(item.Category)</h3>
-                    <h3>@Html.Encode(item.Status)</h3>
+                <div id="Tile">
+                    <div id="TileTitle"><h1>@Html.Encode(item.Title)</h1></div>
+                    <div id="TileDescription"><h3>@Html.Encode(item.Description)</h3></div>
+                    <div id="TileElements"><h3>Priority: @Html.Encode(item.Priority)</h3></div>
+                    <div id="TileElements"><h3>Category: @Html.Encode(item.Category)</h3></div>
+                    <div id="TileElements"><h3>Status: @Html.Encode(item.Status)</h3></div>
+                    <div id="TileUrl"><h4>@Html.Encode(item.Url)</h4></div>
                 </div>
             }
         }

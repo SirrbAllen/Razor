@@ -16,30 +16,37 @@ ul {
     height: 100%;
     position: fixed;
     overflow: auto;
+    border-right: solid 2px;
+    border-color: #f15a5d;
 }
     li {
         color: #f1f1f1;
         padding: 10px;
-        border-radius: 10px;
         background-color: #1e162d;
         margin-top: 20px;
     }
         li:hover {
             background-color: #f15a5d;
         }
-    a{
+    a {
         color: #f1f1f1;
         display: block;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    #search{
+        width: 80%;
+        padding: 5px;
+        margin-top: 10px;
     }
     #Button {
         color: #f1f1f1;
         border: solid 2px;
         border-color: #f15a5d;
-        border-radius: 10px;
         padding: 5px;
         width: 30%;
         text-align: center;
         margin: 0 auto;
+        font-family: Arial, Helvetica, sans-serif;
     }
         #Button:hover {
             background-color: #f15a5d;
@@ -48,7 +55,6 @@ ul {
     text-align: center;
     border: solid 2px;
     border-color: #f15a5d;
-    border-radius: 10px;
     width: 50%;
     margin: 0 auto;
     margin-top: 20px;
@@ -58,50 +64,81 @@ ul {
         display: block;
         border: solid 2px;
         background-color: #1e162d;
-        border-color: #f15a5d;
-        border-radius: 10px;
+        border-color: #f1f1f1;
         color: #f1f1f1;
         width: 70%;
         margin: 0 auto;
         padding: 5px;
         margin-bottom: 10px;
+        font-family: Arial, Helvetica, sans-serif;
     }
     textarea {
         color: #f1f1f1;
         background-color: #1e162d;
         border: solid 2px;
-        border-color: #f15a5d;
-        border-radius: 10px;
+        border-color: #f1f1f1;
         margin-bottom: 10px;
         width: 70%;
         padding: 5px;
+        font-family: Arial, Helvetica, sans-serif;
     }
     select {
         color: #f1f1f1;
         background-color: #1e162d;
         border: solid 2px;
-        border-color: #f15a5d;
-        border-radius: 10px;
+        border-color: #f1f1f1;
         margin-bottom: 10px;
         width: 70%;
         padding: 5px;
+        font-family: Arial, Helvetica, sans-serif;
     }
-    .Input_Button{
-        width: 30%;
-    }
-        .Input_Button:hover {
-            background-color: #f15a5d;
+        .Input_Button {
+            width: 30%;
+            border-color: #f1f1f1;
+            background-color: #271e3b;
+            font: italic;
         }
-h1{
+            .Input_Button:hover {
+                border-color: #f15a5d;
+                color: #f15a5d;
+            }
+    label{
+        color: #f1f1f1;
+        display: block;
+        text-align: left;
+        margin-left: 15%;
+        font-family: Arial, Helvetica, sans-serif;
+        padding: 5px;
+    }
+.title {
+    color: #f1f1f1;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+#Tile {
+    width: 50%;
+    border: solid 2px;
+    border-color: #f15a5d;
+    margin-bottom: 5px;
+    text-align: center;
+    display: inline-block;
+    max-height: 250px;
+    min-height: 250px;
+}
+#TileTitle{
+    color: #f1f1f1;
+    padding: 0;
+}
+#TileDescription {
+    color: #f1f1f1;
+    padding: 0;
+}
+#TileElements{
+    display: inline-block;
+    color: #f1f1f1;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+#TileUrl {
     color: #f1f1f1;
 }
-    .title{
-        text-align: center;
-    }
-    h3{
-        color: #f1f1f1;
-        width: 250px;
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
-    }
