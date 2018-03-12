@@ -105,7 +105,7 @@ ul {
         font-family: Arial, Helvetica, sans-serif;
         padding: 5px;
     }
-h1.title {
+.title {
     color: #f1f1f1;
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
@@ -123,11 +123,11 @@ h1.title {
 }
 #TileTitle{
     color: #f1f1f1;
-    padding: 0px;
+    padding: 0;
 }
 #TileDescription {
     color: #f1f1f1;
-    padding: 0px;
+    padding: 0;
 }
 #TileElements{
     display: inline-block;
