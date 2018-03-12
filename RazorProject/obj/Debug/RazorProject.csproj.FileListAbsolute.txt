@@ -279,3 +279,4 @@ C:\Users\thing\Documents\GitHub\Razor\RazorProject\obj\Debug\RazorProject.csproj
 C:\Users\thing\Documents\GitHub\Razor\RazorProject\obj\Debug\RazorProject.csproj.CoreCompileInputs.cache
 C:\Users\thing\Documents\GitHub\Razor\RazorProject\obj\Debug\RazorProject.dll
 C:\Users\thing\Documents\GitHub\Razor\RazorProject\obj\Debug\RazorProject.pdb
+C:\Users\12allenb\Source\Repos\Razor\RazorProject\bin\DevOne.Security.Cryptography.BCrypt.dll
