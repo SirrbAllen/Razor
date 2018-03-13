@@ -28,9 +28,23 @@ namespace RazorProject.Controllers
         [HttpPost]
         public ActionResult Register(string email, string password)
         {
-            db.Accounts.Add(new Account { Email = email, Password = password });
-            db.SaveChanges();
-            return RedirectToAction("Index");
+            if (password.Length < 8)
+            {
+                ViewBag.ErrorMessage = "Password must be 8 or more characters";
+                return View();
+            }
+            if (password.Any(char.IsDigit))
+            {
+                ViewBag.ErrorMessage = "Password must contain a numerical character";
+                return View();
+            }
+            else
+            {
+                ViewBag.ErrorMessage = string.Empty;
+                db.Accounts.Add(new Account { Email = email, Password = password });
+                db.SaveChanges();
+                return RedirectToAction("Index");
+            }
         }
 
         public ActionResult Create()

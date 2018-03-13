@@ -32,6 +32,7 @@ ul {
         color: #f1f1f1;
         display: block;
         font-family: "Segoe UI";
+        text-decoration: none;
     }
     #search{
         width: 80%;
@@ -46,14 +47,15 @@ ul {
         width: 30%;
         text-align: center;
         margin: 0 auto;
+        margin-bottom: 10px;
         font-family: "Segoe UI";
     }
         #Button:hover {
-            background-color: #f15a5d;
+            color: #f15a5d;
         }
 .container {
     text-align: center;
-    border: solid 2px;
+    border-top: solid 2px;
     border-color: #f15a5d;
     width: 50%;
     margin: 0 auto;
@@ -64,42 +66,45 @@ ul {
         display: block;
         border: solid 2px;
         background-color: #1e162d;
-        border-color: #f1f1f1;
+        border-color: #f15a5d;
         color: #f1f1f1;
         width: 70%;
         margin: 0 auto;
         padding: 5px;
         margin-bottom: 10px;
         font-family: "Segoe UI";
+        border-radius: 3px;
     }
     textarea {
         color: #f1f1f1;
         background-color: #1e162d;
         border: solid 2px;
-        border-color: #f1f1f1;
+        border-color: #f15a5d;
         margin-bottom: 10px;
         width: 70%;
         padding: 5px;
         font-family: "Segoe UI";
+        border-radius: 3px;
     }
     select {
         color: #f1f1f1;
         background-color: #1e162d;
         border: solid 2px;
-        border-color: #f1f1f1;
+        border-color: #f15a5d;
         margin-bottom: 10px;
         width: 70%;
         padding: 5px;
         font-family: "Segoe UI";
+        border-radius: 3px;
     }
         .Input_Button {
             width: 30%;
-            border-color: #f1f1f1;
+            border-color: #f15a5d;
             background-color: #271e3b;
             font: italic;
+            border-radius: 3px;
         }
             .Input_Button:hover {
-                border-color: #f15a5d;
                 color: #f15a5d;
             }
     label{
@@ -116,29 +121,48 @@ ul {
     text-align: center;
 }
 #Tile {
-    width: 50%;
-    border: solid 2px;
+    width: 80%;
+    border-top: solid 2px;
     border-color: #f15a5d;
-    margin-bottom: 5px;
-    text-align: center;
+    background-color: #1e162d;
     display: inline-block;
-    max-height: 250px;
-    min-height: 250px;
+    margin-bottom: 10px;
+    margin-left: 10%;
+    padding: 5px;
+    text-align: left;
+    display: inline-block;
 }
-#TileTitle{
+#TileTitle {
     color: #f1f1f1;
     padding: 0;
+    width: 80%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-family: "Segoe UI";
 }
 #TileDescription {
     color: #f1f1f1;
     padding: 0;
+    width: 80%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-family: "Segoe UI";
 }
-#TileElements{
+#TileElements {
     display: inline-block;
     color: #f1f1f1;
     margin-left: 5px;
     margin-right: 5px;
+    font-size: 10px;
+    font-family: "Segoe UI";
 }
 #TileUrl {
     color: #f1f1f1;
+    width: 80%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-family: "Segoe UI";
 }
