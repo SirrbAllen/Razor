@@ -20,6 +20,7 @@
                     <div id="TileElements"><h3>Priority: @Html.Encode(item.Priority)</h3></div>
                     <div id="TileElements"><h3>Category: @Html.Encode(item.Category)</h3></div>
                     <div id="TileElements"><h3>Status: @Html.Encode(item.Status)</h3></div>
+                    <div id="TileElements">@Html.ActionLink("Edit", "Edit", new { id = item.ID })</div>
                 </div>
             }
         }

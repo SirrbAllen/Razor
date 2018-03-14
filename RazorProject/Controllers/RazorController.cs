@@ -64,5 +64,30 @@ namespace RazorProject.Controllers
             return View();
         }
 
+        public ActionResult Edit(int? id)
+        {
+            if (id == null)
+            {
+                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
+            }
+            Technology technology = db.Technologies.Find(id);
+            if (technology == null)
+            {
+                return HttpNotFound();
+            }
+            return View(technology);
+        }
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public ActionResult Edit([Bind(Include = "ID,Title,Description,Url,Priority,Category,Status")] Technology technology)
+        {
+            if (ModelState.IsValid)
+            {
+                db.Entry(technology).State = EntityState.Modified;
+                db.SaveChanges();
+                return RedirectToAction("Index");
+            }
+            return View(technology);
+        }
     }
 }
