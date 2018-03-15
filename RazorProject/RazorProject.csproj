@@ -226,6 +226,7 @@
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Razor\Create.cshtml" />
     <Content Include="Views\Razor\Edit.cshtml" />
+    <Content Include="Views\Razor\Delete.cshtml" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>

@@ -1,0 +1,33 @@
+﻿@model RazorProject.Models.Technology
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Delete</title>
+</head>
+<body>
+    <h1 class="title">Delete</h1>
+    <div class="container"> 
+        @using (Html.BeginForm)
+        {
+            <p id="Output">
+                @Html.DisplayNameFor(model => model.Title)
+                @Html.DisplayFor(model => model.Title)
+                @Html.DisplayNameFor(model => model.Description)
+                @Html.DisplayFor(model => model.Description)
+                @Html.DisplayNameFor(model => model.Url)
+                @Html.DisplayFor(model => model.Url)
+                @Html.DisplayNameFor(model => model.Priority)
+                @Html.DisplayFor(model => model.Priority)
+                @Html.DisplayNameFor(model => model.Category)
+                @Html.DisplayFor(model => model.Category)
+                @Html.DisplayNameFor(model => model.Status)
+                @Html.DisplayFor(model => model.Status)
+            </p>
+            <input type="submit" value="DELETE" class="Input_Button" />
+        }
+    </div>
+</body>
+</html>

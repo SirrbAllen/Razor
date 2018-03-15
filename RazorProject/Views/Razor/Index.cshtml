@@ -15,7 +15,7 @@
                 @using (Html.BeginForm())
                 {
                 @Html.TextBox("SearchString")
-                <input type="submit" value="Search" class="Input_Button"/>
+                <input type="submit" value="SEARCH" class="Input_Button"/>
                 }
             </div>
 
@@ -25,10 +25,11 @@
                     <div id="TileTitle"><h1>@Html.Encode(item.Title)</h1></div>
                     <div id="TileDescription"><h3>@Html.Encode(item.Description)</h3></div>
                     <div id="TileUrl"><a>@Html.Encode(item.Url)</a></div>
-                    <div id="TileElements"><h3>Priority: @Html.Encode(item.Priority)</h3></div>
-                    <div id="TileElements"><h3>Category: @Html.Encode(item.Category)</h3></div>
-                    <div id="TileElements"><h3>Status: @Html.Encode(item.Status)</h3></div>
-                    <div id="TileElements">@Html.ActionLink("Edit", "Edit", new { id = item.ID })</div>
+                    <div class="TileElements"><h3>Priority: @Html.Encode(item.Priority)</h3></div>
+                    <div class="TileElements"><h3>Category: @Html.Encode(item.Category)</h3></div>
+                    <div class="TileElements"><h3>Status: @Html.Encode(item.Status)</h3></div>
+                    <div class="TileElements">@Html.ActionLink("Edit", "Edit", new { id = item.ID })</div>
+                    <div class="TileElements">@Html.ActionLink("Delete", "Delete", new { id = item.ID })</div>
                 </div>
             }
         }

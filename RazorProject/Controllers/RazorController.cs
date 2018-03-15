@@ -117,5 +117,20 @@ namespace RazorProject.Controllers
             }
             return View(technology);
         }
+        
+        public ActionResult Delete(int? id)
+        {
+            Technology technology = db.Technologies.Find(id);
+            return View(technology);
+        }
+        [HttpPost, ActionName("Delete")]
+        [ValidateAntiForgeryToken]
+        public ActionResult DeleteConfirmed(int id)
+        {
+            Technology technology = db.Technologies.Find(id);
+            db.Technologies.Remove(technology);
+            db.SaveChanges();
+            return RedirectToAction("Index");
+        }
     }
 }

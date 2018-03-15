@@ -154,7 +154,7 @@ ul {
     text-overflow: ellipsis;
     font-family: "Segoe UI";
 }
-#TileElements {
+.TileElements {
     display: inline-block;
     color: #f1f1f1;
     margin-left: 5px;
