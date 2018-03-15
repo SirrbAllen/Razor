@@ -18,9 +18,17 @@ namespace RazorProject.Controllers
         private RazorDB db = new RazorDB();
 
 
-        public ActionResult Index()
+        public ActionResult Index(string SearchString)
         {
-            return View(db.Technologies.ToList());
+            var Tech = from T in db.Technologies
+                       select T;
+
+            if (!String.IsNullOrEmpty(SearchString))
+            {
+                Tech = Tech.Where(s => s.Title.Contains(SearchString));
+            }
+            return View(Tech);
+
         }
 
         public ActionResult Register()

@@ -33,6 +33,10 @@ ul {
         display: block;
         font-family: "Segoe UI";
         text-decoration: none;
+        text-align: center;
+    }
+    a.navbar-link{
+        text-align: left;
     }
     #search{
         width: 80%;

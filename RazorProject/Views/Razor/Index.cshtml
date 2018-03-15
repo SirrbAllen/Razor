@@ -9,10 +9,18 @@
         @if (Model != null)
         {
             <h1 class="title">Technologies</h1>
-            <div class="container"></div>
-            <a href="/Razor/Create" id="Button">ADD TECHNOLOGY</a>
-                foreach (var item in Model)
+            <div class="container">
+                <a href="/Razor/Create" id="Button">ADD TECHNOLOGY</a>
+
+                @using (Html.BeginForm())
                 {
+                @Html.TextBox("SearchString")
+                <input type="submit" value="Search" class="Input_Button"/>
+                }
+            </div>
+
+            foreach (var item in Model)
+            {
                 <div id="Tile">
                     <div id="TileTitle"><h1>@Html.Encode(item.Title)</h1></div>
                     <div id="TileDescription"><h3>@Html.Encode(item.Description)</h3></div>
