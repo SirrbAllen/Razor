@@ -94,15 +94,7 @@ namespace RazorProject.Controllers
 
         public ActionResult Edit(int? id)
         {
-            if (id == null)
-            {
-                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
-            }
             Technology technology = db.Technologies.Find(id);
-            if (technology == null)
-            {
-                return HttpNotFound();
-            }
             return View(technology);
         }
         [HttpPost, ActionName("Edit")]
